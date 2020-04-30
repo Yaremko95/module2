@@ -22,7 +22,7 @@
   </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Random Lists</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -60,9 +60,9 @@
     <div class="container">
         
         <div class="title pt-4">
-            <h1 class="display-4 text-center">Edit Settings</h1>
+            <h1 class="display-4 text-center">Team Generator</h1>
        </div>
-        <div class="row shadow-lg pt-4 pb-4">
+        <div class="row row-cols-1 shadow-lg pt-4 pb-4">
             <div class="col-4">
                       <div class="input-group mb-3">
                           <input type="number" id="numTeams" class="form-control " placeholder="Number of Teams"/>
@@ -72,7 +72,7 @@
                       </div>
                      
             </div>
-             <div class="col-4" style="align-items: center;">
+             <div class="col-2">
                 <div class="pb-2 pt-4">
                   <button type="button" class="btn btn-outline-secondary  " onclick="createTeamCol()">Create Teams</button>
                 </div>
@@ -80,8 +80,14 @@
                    <button type="button" class="btn btn-outline-secondary " onclick="assignOne()">Assign Player</button>
                 </div> 
                 <div>
-                  <button type="button" class="btn btn-outline-secondary " style="width:120px"onclick="reset()">Reset</button>
+                  <button type="button" class="btn btn-outline-secondary " style="width:7.5rem"onclick="reset()">Reset</button>
                </div> 
+            </div>
+            <div class="col-6">
+              <h5 >How to create randomized groups </h5>
+              <p>Enter a number of teams and a list of players (each player on a new line), click on the create team button to create a number of teams and assign button to assign a random player to a random team. </p>
+              <p>You will be able to delete a a player from the team as well as reset the whole process</p>
+
             </div>
               </div>
        
@@ -182,7 +188,7 @@
 
             function reset () {
               let players=document.querySelectorAll(".player p")
-              let playerElements =document.querySelectorAll(".player")
+              let playerElements =document.querySelectorAll(".card")
               let textArea=document.getElementById("NameList")
               const playerArr=[]
               players.forEach(element => {
