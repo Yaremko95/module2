@@ -62,22 +62,29 @@
         <div class="title pt-4">
             <h1 class="display-4 text-center">Edit Settings</h1>
        </div>
-        <div class="row">
+        <div class="row shadow-lg pt-4 pb-4">
             <div class="col-4">
-                <div class="input-group mb-3">
-                     <input type="number" id="numTeams" class="form-control " placeholder="Number of Teams"/>
-                </div>
-               <div>
-                    <textarea id="NameList" class="form-control " rows="5" placeholder="List of payers"></textarea>
-               </div class="input-group">
-               <div class="col-8">
-
-               </div>
-               
+                      <div class="input-group mb-3">
+                          <input type="number" id="numTeams" class="form-control " placeholder="Number of Teams"/>
+                      </div>
+                      <div class="input-group">
+                            <textarea id="NameList" class="form-control " rows="5" placeholder="List of payers"></textarea>
+                      </div>
+                     
             </div>
-        </div>
-        <button type="button" class="btn btn-outline-secondary " onclick="createTeamCol()">Create Teams</button>
-        <button type="button" class="btn btn-outline-secondary " onclick="assignOne()">Assign Player</button>
+             <div class="col-4" style="align-items: center;">
+                <div class="pb-2 pt-4">
+                  <button type="button" class="btn btn-outline-secondary  " onclick="createTeamCol()">Create Teams</button>
+                </div>
+                <div class="pb-2">
+                   <button type="button" class="btn btn-outline-secondary " onclick="assignOne()">Assign Player</button>
+                </div> 
+                <div>
+                  <button type="button" class="btn btn-outline-secondary " style="width:120px"onclick="reset()">Reset</button>
+               </div> 
+            </div>
+              </div>
+       
         <div class="row teams-wrapper pt-4">
 
         </div>
@@ -97,10 +104,14 @@
       function getRandomName() {
         let textArea=document.getElementById("NameList")
         let arrOfNames=textArea.value.split("\n");
-            let randIndex=Math.floor(Math.random()*arrOfNames.length)
-            let name=arrOfNames[randIndex];
-            arrOfNames.splice(randIndex,1);
-            textArea.value=arrOfNames.join("\n")
+        let cleanArray = arrOfNames.filter(function (e) { return e });
+        console.log(cleanArray)
+            let randIndex=Math.floor(Math.random()*cleanArray.length)
+            let name=cleanArray[randIndex];
+            console.log(name)
+            cleanArray.splice(randIndex,1);
+            textArea.value=cleanArray.join("\n")
+            
             return name
       }
 
@@ -117,7 +128,6 @@
            parent.className=` row teams-wrapper pt-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-${getTeamNum}`
            const columns=[];
            for(let i=0; i<parseInt(getTeamNum); i++) {
-              
                 columns.push (
                     `
                     <div class="col mb-4">
@@ -131,15 +141,12 @@
             }
             parent.innerHTML=columns.join('');
             console.log(parent)
-
-        
             }
-            const players=document.querySelectorAll(".row");
-            const btns =[]
-      
 
 
 
+           // const players=document.querySelectorAll(".row");
+            
              function assignOne () {
                let team=getRandomTeam();
                let name=getRandomName();
@@ -160,23 +167,36 @@
 
             
              function addRemoveBtn() {
-              
-              let btn=document.createElement('button')
-              btn.className="btn btn-outline-danger btn-sm removeBtn"
-              btn.innerText="Remove"
-              btn.type="button"
-              btn.onclick=function() {
-                let player=btn.previousElementSibling.innerText
-                btn.parentElement.remove();
-                console.log(player)
-                document.getElementById("NameList").value +="\n"+ player
-              }
-             return btn
-       }
+                let btn=document.createElement('button')
+                btn.className="btn btn-outline-danger btn-sm removeBtn"
+                btn.innerText="Remove"
+                btn.type="button"
+                btn.onclick=function() {
+                  let player=btn.previousElementSibling.innerText
+                  btn.parentElement.remove();
+                  console.log(player)
+                  document.getElementById("NameList").value +="\n"+ player
+                }
+              return btn
+            }
 
-       function addRemovedPlayerToList() {
+            function reset () {
+              let players=document.querySelectorAll(".player p")
+              let playerElements =document.querySelectorAll(".player")
+              let textArea=document.getElementById("NameList")
+              const playerArr=[]
+              players.forEach(element => {
+                playerArr.push(element.innerText)
+               
+              });
+              playerElements.forEach(element => {
+                element.remove()
+              });
+              textArea.value=playerArr.join("\n")
+              console.log(playerArr)
+            }
 
-       }
+      
       
    
 
