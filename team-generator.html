@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Strive video</title>
+  </head>
+  <style>
+
+ 
+    
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="title pt-4">
+            <h1 class="display-4 text-center">Edit Settings</h1>
+       </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="input-group mb-3">
+                     <input type="number" id="numTeams" class="form-control " placeholder="Number of Teams"/>
+                </div>
+               <div>
+                    <textarea id="NameList" class="form-control " rows="5" placeholder="List of payers"></textarea>
+               </div class="input-group">
+               <div class="col-8">
+
+               </div>
+               
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-secondary " onclick="createTeamCol()">Create Teams</button>
+        <button type="button" class="btn btn-outline-secondary " onclick="assignOne()">Assign Player</button>
+        <div class="row teams-wrapper pt-4">
+
+        </div>
+    </div>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     
+    <script>
+        
+        
+      function getRandomName() {
+        let textArea=document.getElementById("NameList")
+        let arrOfNames=textArea.value.split("\n");
+            let randIndex=Math.floor(Math.random()*arrOfNames.length)
+            let name=arrOfNames[randIndex];
+            arrOfNames.splice(randIndex,1);
+            textArea.value=arrOfNames.join("\n")
+            return name
+      }
+
+      function getRandomTeam(){
+          let teams=document.querySelectorAll(".col")
+          let randIndex=Math.floor(Math.random()*teams.length)
+          return teams[randIndex]
+      }
+
+
+        function createTeamCol() {
+            let getTeamNum=document.getElementById("numTeams").value;
+            let parent =document.querySelector(".teams-wrapper")
+           parent.className=` row teams-wrapper pt-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-${getTeamNum}`
+           const columns=[];
+           for(let i=0; i<parseInt(getTeamNum); i++) {
+              
+                columns.push (
+                    `
+                    <div class="col"><p class="display-4 text-center">Team ${i+1} </p>
+                        
+                    </div>
+                    `
+                )  
+            }
+            parent.innerHTML=columns.join('');
+            console.log(parent)
+
+            // let cols=document.querySelectorAll(".col-3")
+
+            // let textArea=document.getElementById("NameList")
+            // let arrOfNames=textArea.value.split("\n");
+            // let i=arrOfNames.length
+
+            // while(i) {
+            //      cols.forEach(parentEl => {
+            //     let par=document.createElement('p')
+            //     par.className="display-6 text-center";
+            //     let name=getRandomName();
+            //     par.innerText=name;
+            //     parentEl.appendChild(par)
+            //     console.log(name)
+               
+            // });
+            // i--
+            }
+
+      
+
+             function assignOne () {
+               let team=getRandomTeam();
+               let name=getRandomName();
+               let paragraph=document.createElement('p')
+               paragraph.className="display-6 text-center";
+               paragraph.innerText=name;
+               team.appendChild(paragraph);  
+             }
+            
+
+              
+          
+        
+        // window.onload = function () {
+        // function showQuestions() {
+        //     const output =[];
+        //     questions.forEach((question, qNum ) => {
+        //       const answers=[];
+        //       for(number in question.incorrect_answers) {
+        //         answers.push (
+        //          ` <label>
+        //           <input type="radio" name="q${qNum}" value="${question.incorrect_answers[number]}">
+        //            ${question.incorrect_answers[number]}
+        //           </label>`
+        //         );
+        //       }
+        //       output.push (
+        //         `<div class="question">${qNum+1}. ${question.question} </div>
+        //         <div class="answers"> ${answers.join('')}</div>`
+        //       );
+
+        //     });
+        //     quizQuestions.innerHTML=output.join('');
+        // }
+       
+
+    </script>
+</body>
+</html>
