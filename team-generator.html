@@ -12,6 +12,11 @@
   </head>
   <style>
 
+    .playerEl {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
  
     
   </style>
@@ -100,7 +105,7 @@
       }
 
       function getRandomTeam(){
-          let teams=document.querySelectorAll(".col")
+          let teams=document.querySelectorAll(".card-body")
           let randIndex=Math.floor(Math.random()*teams.length)
           return teams[randIndex]
       }
@@ -109,14 +114,17 @@
         function createTeamCol() {
             let getTeamNum=document.getElementById("numTeams").value;
             let parent =document.querySelector(".teams-wrapper")
-           parent.className=` row teams-wrapper pt-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-${getTeamNum}`
+           parent.className=` row teams-wrapper pt-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-${getTeamNum}`
            const columns=[];
            for(let i=0; i<parseInt(getTeamNum); i++) {
               
                 columns.push (
                     `
-                    <div class="col"><p class="display-4 text-center">Team ${i+1} </p>
-                        
+                    <div class="col mb-4">
+                      <div class="card text-white bg-dark mb-3"> 
+                        <div class="card-header">Team ${i+1} </div>
+                        <div class="card-body"></div>
+                      </div>
                     </div>
                     `
                 )  
@@ -124,42 +132,55 @@
             parent.innerHTML=columns.join('');
             console.log(parent)
 
-            // let cols=document.querySelectorAll(".col-3")
-
-            // let textArea=document.getElementById("NameList")
-            // let arrOfNames=textArea.value.split("\n");
-            // let i=arrOfNames.length
-
-            // while(i) {
-            //      cols.forEach(parentEl => {
-            //     let par=document.createElement('p')
-            //     par.className="display-6 text-center";
-            //     let name=getRandomName();
-            //     par.innerText=name;
-            //     parentEl.appendChild(par)
-            //     console.log(name)
-               
-            // });
-            // i--
+        
             }
-
+            const players=document.querySelectorAll(".row");
+            const btns =[]
       
+
+
 
              function assignOne () {
                let team=getRandomTeam();
                let name=getRandomName();
-               let paragraph=document.createElement('p')
-               paragraph.className="display-6 text-center";
-               paragraph.innerText=name;
-               team.appendChild(paragraph);  
-             }
-            
+               let btn =addRemoveBtn();
 
+               let element =document.createElement('div')
+                element.className="player mb-2"
+                element.classList.add("playerEl")
+                
+               let paragraph=document.createElement('p')
+               paragraph.className="display-6";
+               paragraph.innerText=name;
+               team.appendChild(element);
+               element.appendChild(paragraph)
+               element.appendChild(btn)
+             }
+
+
+            
+             function addRemoveBtn() {
               
-          
-        
+              let btn=document.createElement('button')
+              btn.className="btn btn-outline-danger btn-sm removeBtn"
+              btn.innerText="Remove"
+              btn.type="button"
+              btn.onclick=function() {
+                let player=btn.previousElementSibling.innerText
+                btn.parentElement.remove();
+                console.log(player)
+                document.getElementById("NameList").value +="\n"+ player
+              }
+             return btn
+       }
+
+       function addRemovedPlayerToList() {
+
+       }
       
-       
+   
+
+   
 
     </script>
 </body>
