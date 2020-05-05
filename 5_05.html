@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+      .header {
+          background-color:#007BFF;
+          color:white;
+         
+
+      }
+      .header .row div > span {
+            font-size: 1.4rem;
+      }
+      .header .row div a {
+        color:white;
+      }
+      /* .container > p:nth-child(2n):not(:nth-child(4)) {
+          font-size: 1.2rem;
+          color: #777777;
+      } */
+      .container > p.text-center.my-2{
+        font-size: 1.2rem;
+          color: #777777;
+      }
+      
+    
+      /* .container > div {
+          color: white;
+      } */
+      .container > .firstTask{
+          border: 2px solid black ;
+          border-radius: 50px;
+          overflow: hidden;
+      }
+      .container > .firstTask  > div:first-child {
+          height:400px;
+          background-color:#6BB56B;
+          border-right: 2px solid black ;
+          color: white;
+         
+      }
+      .container > .firstTask  > div:nth-child(2) {
+          
+          background-color: #299BFF;
+          font-weight: bold;
+          color: white;
+      }
+      .container > .firstTask  > div:nth-child(3) {
+          
+         display: grid;
+        
+          color: black ;
+
+      }
+      /* .container  .col-4 div {
+          justify-content: center;
+      } */
+      .container .firstTask .col-4 div:nth-child(1) {
+          background-color: #FFF7BD;
+      }
+      .container .firstTask .col-4 div:nth-child(2) {
+          background-color:#FFED69;
+      }
+      .container .firstTask .col-4 div:nth-child(3) {
+          background-color:#FFE41F;
+      }
+      .secondTask .col .card-header, 
+      .forthTask .card-header {
+            font-size: 1.3rem;
+            font-weight: 400;
+
+      }
+      .secondTask .col .card-title span:first-of-type {
+        font-size: 1.6rem;
+        
+      }
+      .secondTask .col .card-title span:last-of-type {
+       color: #888888;
+       
+      }
+      .thirdTask .card-text {
+        color: #55595C;
+        font-weight: 500;
+      }
+      .thirdTask .card-text a {
+        color: #6c757d;
+      
+        padding: 2px;
+      }
+      .thirdTask .card-text a:first-of-type {
+        border: 1px solid #6c757d;
+        border-radius: 2px;
+      }
+      .thirdTask .card-text a:last-of-type {
+        border: 1px solid #6c757d;
+        border-left:0;
+        border-radius: 2px;
+      
+      }
+      .forthTask .card .card-title{
+         font-size:1.5rem;
+      }
+      .forthTask .card-body .col ul,
+      .footer .col ul {
+        display: inline;
+        list-style-type: none;
+        
+      }
+      .forthTask .card:nth-child(2) > .card-body {
+          padding-top: 0 !important;
+      }
+      .pagination .btn {
+          border-color: #6c757d;
+      }
+      .footer {
+          border-top: 1px solid #999999;
+      }
+      .footer .col ul li:first-of-type {
+          font-weight: bold;
+          font-size:1.2rem;
+          padding-bottom: 20px;
+      }
+      .footer .col ul li a {
+          color: #888888;
+          
+      }
+  </style>
+  <body>
+   
+
+    <div class="container-fluid header">
+        <div class="row py-2 justify-content-center ">
+            <div class="col-6 my-2">
+                <span>Navbar </span> 
+                <a class="ml-4" href="#">Home</a>   
+            </div>
+        </div>  
+    </div>
+    <div class="container">
+         <p class="text-center display-4 mt-4">Exercise 1</p> 
+         <p class="text-center my-2">Recreate this table just using Bootstrap4 classes or styling, without adding/removing any DOM element</p>
+        <div class="row firstTask">
+            <div class="col-6 d-flex flex-column justify-content-center text-center">
+                <span>First Column</span>
+                <span>Height 400px</span>
+                <span>Green-ish background</span>
+                <span>Text Centered</span>
+            </div>
+            <div class="col-2 d-flex align-items-end">
+                <p>Second Column Text To the bottom Bold, blueish background</p>
+            </div>
+            <div class="col-4">
+                <div class="row d-flex flex-column justify-content-center text-center "><p > Third Column Part1</p></div>
+                <div class="row d-flex flex-column justify-content-center text-center "><p> Third Column Part1</p></div>
+                <div class="row  d-flex flex-column justify-content-center text-center"><p> Third Column Part1</p></div>
+            </div>
+        </div>
+        <p class="text-center display-4 mt-4">Exercise 2</p> 
+        <p class="text-center my-2 mx-4 px-4">Create your pricing table to sell your product Classical, 3 card approach with 3 pricing. This is a classicla user/priced product, with new feature enabled for the pro/enterprise version</p>
+        
+        <div class="row mt-4 row-cols-1 row-cols-sm-2 row-cols-md-3 secondTask">
+            <div class="col">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">Free</div>
+                <div class="card-body">
+                  <h5 class="card-title text-center "><span>$ 5 </span><span>/ mo</span></h5>
+                  <p class="card-text  d-flex flex-column justify-content-center text-center">
+                      <span>10 users included</span>
+                      <span>2 GB od storage </span>
+                      <span>Email support</span>
+                      <span>Help center access</span>
+                    </p>
+                    <button type="button" class="btn btn-outline-primary btn-lg btn-block">Sign up for free</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">Pro</div>
+                <div class="card-body">
+                  <h5 class="card-title text-center"><span>$ 5 </span><span>/ mo</span></h5>
+                  <p class="card-text  d-flex flex-column justify-content-center text-center">
+                      <span>10 users included</span>
+                      <span>2 GB od storage </span>
+                      <span>Email support</span>
+                      <span>Help center access</span>
+                    </p>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">Enterprice</div>
+                <div class="card-body">
+                  <h5 class="card-title text-center"><span>$ 5 </span><span>/ mo</span></h5>
+                  <p class="card-text  d-flex flex-column justify-content-center text-center">
+                      <span>10 users included</span>
+                      <span>2 GB od storage </span>
+                      <span>Email support</span>
+                      <span>Help center access</span>
+                    </p>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Contact us</button>
+                </div>
+              </div>
+            </div>
+           
+
+        </div>
+        <p class="text-center display-4 mt-4">Exercise 3</p> 
+        <p class="text-center my-2">And this could be the video part of your website! here you can add akk the video content, dsplayed inside cards</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 thirdTask">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://w3websitedesignbrisbane.com.au/wp-content/uploads/2017/04/web-1045994__340.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+        <p class="text-center display-4 mt-4">Exercise 4</p> 
+        <p class="text-center my-2">And this could be the video part of your website! here you can add akk the video content, dsplayed inside cards</p>
+        <div class="row forthTask">
+            <div class="col-12 col-md-8 ">
+                <div class="d-flex align-items-baseline mb-2">
+                    <h4 class="mr-4">Page heading </h4> 
+                    <h5> Secondary Task</h5>
+                </div>
+                <div class="card mt-4">
+                    <img src="https://marketing.co.id/wp-content/uploads/2018/01/contet-writing-web-design-west-chester-pa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Post title</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                      <button type="button" class="btn btn-primary btn-lg">Read more</button>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Posted on January 12, 202 by <a href="#">Admin</a></small>
+                    </div>
+                  </div>
+                  <div class="card mt-4">
+                    <img src="https://marketing.co.id/wp-content/uploads/2018/01/contet-writing-web-design-west-chester-pa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Post title</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                      <button type="button" class="btn btn-primary btn-lg">Read more</button>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Posted on January 12, 202 by <a href="#">Admin</a></small>
+                    </div>
+                  </div>
+                  <div class="card mt-4">
+                    <img src="https://marketing.co.id/wp-content/uploads/2018/01/contet-writing-web-design-west-chester-pa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Post title</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                      <button type="button" class="btn btn-primary btn-lg">Read more</button>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Posted on January 12, 202 by <a href="#">Admin</a></small>
+                    </div>
+                  </div>
+               
+
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card mb-4" >
+                    <div class="card-header">
+                      Find in my blog
+                    </div>
+                    <div class="card-body" >
+                         <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-secondary" type="button" id="button-addon2">Button</button>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <div class="card mb-4" >
+                    <div class="card-header">
+                      Categories
+                    </div>
+                    <div class="card-body d-flex " >
+                        <div class="col">
+                        <ul class="mt-0">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                        </ul>
+                        </div>
+                        <div class="col">
+                          <ul>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">SASS</a></li>
+                            <li><a href="#">Bootstrap4</a></li>
+                        </ul>  
+                        </div>
+                        
+                    </div>
+                   
+                  </div>
+                  <div class="card mb-4" >
+                    <div class="card-header">
+                      Widgets
+                    </div>
+                    <div class="card-body" >
+                      Ususally here ...
+                    </div>
+                   
+                  </div>
+            </div>
+        </div>
+        <div class="row pagination justify-content-center mt-4 ">
+            <button type="button" class="btn btn-outline-primary rounded-0">Older</button>
+            <button type="button" class="btn btn-outline-secondary rounded-0">Newer</button>
+        </div>
+
+        <p class="text-center display-4 mt-4">Exercise 5</p> 
+        <p class="text-center my-2 pb-4">Recreate this table just using Bootstrap4 classes or styling, without adding/removing any DOM element</p>
+
+        <div class="row footer row-cols-1 row-cols-sm-2 row-cols-md-3 pt-4 mt-4">
+            <div class="col">
+                <ul>
+                    <li>Features</li>
+                    <li><a href="#">Cool stuff</a></li>
+                    <li><a href="#">Random feature</a></li>
+                    <li><a href="#">Team Feature</a></li>
+                    <li><a href="#">Stuff for developers</a></li>
+                    <li><a href="#">Another one</a></li>
+                    <li><a href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>Resources </li>
+                    <li><a href="#">Resource</a></li>
+                    <li><a href="#">Resource name</a></li>
+                    <li><a href="#">Another resource</a></li>
+                    <li><a href="#">Final resource</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>About</li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+
+    </div>
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
