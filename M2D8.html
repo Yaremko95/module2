@@ -409,15 +409,18 @@
       
         post.forEach(element => {
           let pars=  element.getElementsByTagName("p")
-            const length =150;
+         
+
+            let length =150;
             for (let i=1; i<pars.length; i++) {
-                
-                if(pars[i].length<length) {
-                    length=length-pars[i].length
+                console.log(pars[i].innerText.length)
+                if(pars[i].innerText.length<length) {
+                    console.log(length)
+                    length=length-pars[i].innerText.length
                     pars[i].remove();
                    
                 } else {
-                    pars[1].innerText =  pars[i].innerText.substring(length)  
+                    pars[i].innerText =  pars[i].innerText.substring(length)  
                 }
                 
             }
