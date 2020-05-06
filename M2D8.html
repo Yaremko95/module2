@@ -203,7 +203,7 @@
                 <div class="blog-post">
                     <h2 class="blog-post-title">Sample blog post</h2>
                     <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
+                   <p>1234</p>
                     <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap.
                         Basic typography, images, and code are all supported.</p>
                     <hr>
@@ -413,15 +413,16 @@
 
             let length =150;
             for (let i=1; i<pars.length; i++) {
-                console.log(pars[i].innerText.length)
+                
                 if(pars[i].innerText.length<length) {
-                    console.log(length)
+                    console.log("elem", i, pars[i].innerText.length)
                     length=length-pars[i].innerText.length
                     pars[i].remove();
                    
-                } else {
+                } 
+                    console.log("length", i, length)
                     pars[i].innerText =  pars[i].innerText.substring(length)  
-                }
+                
                 
             }
 
