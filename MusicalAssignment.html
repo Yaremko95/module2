@@ -19,7 +19,11 @@
           
       }
       img {
-        max-width:100%  
+        max-width:100%  ;
+        transition: transform 700ms;
+      }
+      img:hover {
+        transform: scale(1.3);
       }
       .col {
           overflow: hidden;
@@ -448,7 +452,7 @@
                         <th scope="row">${trackNum}</th>
                         <td>${trackName}</td>
                         <td>${trackNum}</td>
-                        <td><button type="button" class="btn btn-danger">Danger</button></td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
                       
           `;
           newRow.innerHTML = element
