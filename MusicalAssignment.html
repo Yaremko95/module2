@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+      .jumbotron {
+          background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://thefader-res.cloudinary.com/private_images/w_760,c_limit,f_auto,q_auto:best/Uc2L2Gwa_xytv3p/universal-music-group-spotify-compilation-album-playlist-report.jpg");
+          object-fit: contain;
+          height: 50vh;
+          
+      }
+      img {
+        max-width:100%  
+      }
+      .col {
+          overflow: hidden;
+      }
+      .bolder {
+          font-weight:bold;
+      }
+      .font-black{
+          color: white;
+      }
+      .thirdTask .card-text {
+        color: #55595C;
+        font-weight: 500;
+      }
+      .thirdTask .card-text a {
+        color: #6c757d;
+      
+        padding: 2px;
+      }
+      .thirdTask .card-text a:first-of-type {
+        border: 1px solid #6c757d;
+        border-radius: 2px;
+      }
+      .thirdTask .card-text a:last-of-type {
+        border: 1px solid #6c757d;
+        border-left:0;
+        border-radius: 2px;
+      
+      }
+      a {
+        color:black;
+      }
+      a:hover {
+        color: black;
+        text-decoration: none;
+      }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+            <a class="navbar-brand" href="#">My albums</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#section1">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section2">About</a>
+                </li>
+           
+                <li class="nav-item">
+                  <a class="nav-link " href="#section3" tabindex="-1" aria-disabled="true">Music</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+      </div>
+      </nav>
+   
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#section1">Home</a></li>
+          <li class="breadcrumb-item"><a href="#section2">About</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Music</li>
+        </ol>
+      </nav>
+
+  <div class="container-fluid">
+          <div class="jumbotron  font-black d-flex flex-column justify-content-center">
+            <div class="container ">
+              <h1 class="display-4 bolder">Musical Assignment</h1>
+              <p class="lead bolder">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+          </div>
+  </div>
+  <p class="text-center"><a class="display-4 ml-4 bolder" data-toggle="collapse" href="#section1" role="button" aria-expanded="false" aria-controls="section1">
+    Album Covers
+  </a></p>
+      <div class="container collapse show" id="section1">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+              <div class="col m-0">
+                <div class="row p-0">
+                    <div class="col-6 p-0">
+                        <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" data-toggle="tooltip" title="cover 1!" alt="..." class="img-thumbnail image-fluid ">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" data-toggle="tooltip" title="cover 2!" alt="..." class="img-thumbnail image-fluid">
+                    </div>
+                </div>
+                <div class="row p-0">
+                    <div class="col-6 p-0">
+                        <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" data-toggle="tooltip" title="cover 3!" alt="..." class="img-thumbnail image-fluid">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" data-toggle="tooltip" title="cover 4!" alt="..." class="img-thumbnail image-fluid">
+                    </div>
+                </div>
+              </div>
+              <div class="col m-0 p-0">
+                <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/a_night_at_the_opera_vinyl_store_800x.jpg?v=1564072547" data-toggle="tooltip" title="cover 5!" alt="..." class="img-thumbnail image-fluid">
+            </div>
+            <div class="col m-0 p-0">
+                <div class="row p-0">
+                    <div class="col-6 p-0">
+                        <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" data-toggle="tooltip" title="cover 6!" alt="..." class="img-thumbnail image-fluid">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" data-toggle="tooltip" title="cover 7!" alt="..." class="img-thumbnail image-fluid">
+                    </div>
+                </div>
+                <div class="row p-0">
+                    <div class="col-6 p-0">
+                        <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" data-toggle="tooltip" title="cover 8!" alt="..." class="img-thumbnail image-fluid">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" data-toggle="tooltip" title="cover 9!" alt="..." class="img-thumbnail image-fluid">
+                    </div>
+                </div>
+            </div>
+           
+          </div>
+      </div>
+
+    </div>
+
+    <p class="text-center"><a class="display-4 ml-4 bolder" data-toggle="collapse" href="#section2" role="button" aria-expanded="false" aria-controls="section1">
+      My favorite list
+    </a></p>
+      <div class="container thirdTask collapse show" id="section2">
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 thirdTask my-5">
+            <div class="col mb-4">
+                <div class="card position-relative">
+                  <span class="badge badge-pill badge-dark position-absolute p-2" >Favorite</span>
+                    <img src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image550/.fRpKePuW/SharedImage-92145.jpg?t=4c4bb6b93875a46cd575" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card position-relative">
+                  <span class="badge badge-pill badge-dark position-absolute p-2" >Favorite</span>
+                    <img src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image550/.fRpKePuW/SharedImage-92145.jpg?t=4c4bb6b93875a46cd575" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image550/.fRpKePuW/SharedImage-92145.jpg?t=4c4bb6b93875a46cd575" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image550/.fRpKePuW/SharedImage-92145.jpg?t=4c4bb6b93875a46cd575" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image550/.fRpKePuW/SharedImage-92145.jpg?t=4c4bb6b93875a46cd575" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image550/.fRpKePuW/SharedImage-92145.jpg?t=4c4bb6b93875a46cd575" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Here you can place your video description, in order to inform the user of what to expect by clicking on the link</p>
+                      <p class="card-text d-flex  justify-content-between text-center"><small class="text-muted "><a  href="#"><span  >View</span></a><a  href="#"><span >Edit</span></a></small><small class="text-muted">9 mins</small></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+     <p class="text-center"> <a class="display-4 ml-4 bolder" data-toggle="collapse" href="#section3" role="button" aria-expanded="false" aria-controls="section1">
+        Play List
+      </a></p>
+            <div class="container collapse show" id="section3">
+              <div class="row ">
+                <div class="col-4">
+                  <img src="https://cdn.shopify.com/s/files/1/0069/3465/9162/products/naked_garden_vinyl_store_800x.jpg?v=1586815648" alt="..." class="img-thumbnail image-fluid ">
+                  
+                </div>
+                <div class="col-8 ">
+                  <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Length</th>
+                        <th scope="col">Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div>
+                  <button type="button" id="addTrack" class="btn btn-primary" onclick="addRow()">Add track</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+     <div class="container ">
+        <form class="new-track d-none position-relative">
+          <button type="button" class="close position absolute" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="form-group">
+            <label for="exampleInputEmail1">ETrack Number</label>
+            <input type="number" class="form-control" id="tr-number" aria-describedby="">
+           
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Track Name</label>
+            <input type="text" class="form-control" id="tr-name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Track Length</label>
+            <input type="text" class="form-control" id="tr-length">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Track Featuring</label>
+            <input type="text" class="form-control" id="tr-featuring">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="button" id="submitTr" class="btn btn-primary">Add Track</button>
+        </form>
+     </div>
+
+     <div class="modal" id="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: flex; flex-direction: column;">
+          <input type="email" class="my-4" placeholder="Email"/>
+          <textarea type="text" placeholder="Your message"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn ">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <p class="text-center"><a class="display-4 ml-4 bolder" data-toggle="collapse" href="#section4" role="button" aria-expanded="false" aria-controls="section1">
+      Carousel
+    </a></p>
+  <div class="container my-5 collapse show" id="section4">
+    <div id="carouselExampleCaptions " class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/350x150" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/350x150" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/350x150" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+<footer class="container-fluid border-top border-dark mt-5" style="position: sticky; display: flex; flex-direction: column; justify-content: center; ">
+<div class="container">
+  <div class="row text-center">
+  <div class=" col-fluid dropdown my-3">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Navlinks
+    </button>
+    <div class="col dropdown-menu my-3" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Home</a>
+      <a class="dropdown-item" href="#">About</a>
+      <a class="dropdown-item" href="#">Music</a>
+    </div>
+  </div>
+<div class="col font my-3 " style="margin: auto;">
+  <a class="mx-5" href="https://www.facebook.com/tania.yaremko" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+  <a class="mx-5" href="https://www.instagram.com/yaremkotania/?hl=uk" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+  <a class="mx-5" href="https://www.instagram.com/yaremkotania/?hl=uk" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+</div>
+
+<button type="button" id="modelBtn" class="btn btn-outline-primary my-3" style="margin:auto;width: 18rem;">Contat Us</button>
+
+<div>
+</div>  
+</footer>
+      
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+        });
+      window.onload =function() {
+          removeRow() }
+          
+      function removeRow() {
+         let parent = document.querySelectorAll("tbody tr")
+          
+          parent.forEach(element => {
+            let tr = element.getElementsByTagName("td")
+           tr[tr.length-1].addEventListener('click', function() {
+            element.remove()
+           })
+           
+          });
+      }
+      function addRow() {
+        let form=document.querySelector(".new-track")
+        let submit =document.getElementById('submitTr')
+        form.classList.remove("d-none")
+        let parent = document.querySelector("tbody")
+        let newRow =document.createElement("tr")
+         let close =document.querySelector(".close")
+         close.addEventListener('click', function() {
+           form.classList.add("d-none")
+         })
+        submit.addEventListener('click', function() {
+
+           let trackNum = document.getElementById("tr-number").value
+          let trackName = document.getElementById("tr-name").value
+          let trackLength = document.getElementById("tr-length").value
+          let trackFeaturing = document.getElementById("tr-featuring").value
+          if( trackNum!=''|| trackName!='' || trackLength!='') {
+                let element = `
+                        <th scope="row">${trackNum}</th>
+                        <td>${trackName}</td>
+                        <td>${trackNum}</td>
+                        <td><button type="button" class="btn btn-danger">Danger</button></td>
+                      
+          `;
+          newRow.innerHTML = element
+          parent.appendChild(newRow)
+          removeRow();
+          } else {
+            alert('fields are required')
+          }
+       
+        })
+         
+
+      }
+
+      var modalBtn=document.getElementById("modelBtn")
+      var modal =document.getElementById("modal")
+      var span = document.getElementsByClassName("close")[0];
+      modalBtn.onclick = function() {
+      modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        function deleteAllCard () {
+         
+          let card=document.querySelectorAll(".card")
+          card.forEach(element => {
+            element.classList.add("deleteCard")
+          });
+        }
+
+        
+       
+        
+
+      </script>
+  </body>
+</html>
