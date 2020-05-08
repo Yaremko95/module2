@@ -3,12 +3,94 @@ body{
     background-color: #d8d8d8;
     font-family: "Lato", sans-serif;
 }
+.items {
+    flex-wrap: nowrap;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+    
+}
+
+.item img {
+    width: 70rem;
+    object-fit: cover;
+}
+ .items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+  }
+.item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+
+}
+.item.prev {
+    z-index: 2;
+    opacity: 0.45;
+    transform: translate(-152%, -50%);
+  }
+  .item.next {
+    z-index: 2;
+    opacity: 0.45;
+    transform: translate(52%, -50%);
+  } 
+  .items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    z-index: 100;
+  }
+  
+  .button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+  }
+  .button-container .button:before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+  float: left;
+}
+
+.button-container .button:nth-child(2) {
+  float: right;
+}
 .bolder {
     font-weight: 700;
     font-size: 1.1rem;
 }
 header .nav-link, header i {
     color: white !important;
+}
+.card-img-top {
+    height:9rem; 
+    object-fit:cover;
 }
 .card-body {
     padding: 1rem !important;
@@ -18,6 +100,16 @@ header .nav-link, header i {
 }
 .card-body p {
     margin-bottom: 0.1rem;
+    position: relative;
+}
+.card-price {
+    position: absolute;
+   
+    bottom: 20px;
+    right: 10px;
+}
+.card-price span {
+     font-size: 1.3rem;
 }
  .material-icons {
     color: green;
@@ -46,7 +138,8 @@ p > a {
 }
 .carousel-content {
 	padding: 50px 0;
-	overflow: hidden;
+    overflow: hidden;
+   
 	scroll-behavior: smooth;
 }
 .carousel {
@@ -96,4 +189,9 @@ footer a {
 .btn-footer:hover {
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.73), inset 0 0 10px 2px #A268BD;
     color: #ddd;
+}
+@media screen and (max-width:990px) {
+    .card-price {
+        bottom:0;
+    }
 }
