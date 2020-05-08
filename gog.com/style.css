@@ -1,0 +1,81 @@
+
+body{
+    background-color: #d8d8d8;
+}
+.card-body {
+    padding: 1rem !important;
+    font-size: 0.8rem;
+    color: #1a1a1a;
+    background-color: #ECECEC;
+}
+.card-body p {
+    margin-bottom: 0.1rem;
+}
+.card-body .material-icons {
+    color: green;
+    font-size: 2rem;
+
+}
+.card-body .badge {
+    color: white;
+    background-color: #78387b;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.row {
+	position: relative;
+	
+}
+.carousel-content {
+	padding: 50px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+.carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.left-arrow, 
+.right-arrow {
+	position: absolute;
+	z-index: 10;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 20px;
+	height: 20%;
+	top: 50%;
+	line-height: 40px;
+	width: 30px;
+	color: #fff;
+	cursor: pointer;
+   
+	transition: .2s ease all;
+}
+.left-arrow {
+	left: 0;
+}
+.right-arrow {
+	right: 10px;
+}
+
+footer {
+    color:#ddd;
+    background-color: #262626;
+}
+footer .row:nth-child(2) {
+    background-color: #2F2F2F;
+}
+footer a {
+    color:#ddd;
+}
+.btn-footer {
+    background: url("https://image.shutterstock.com/image-photo/bursting-galaxy-elements-this-image-260nw-1024633576.jpg");
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.73), inset 0 0 3px 1px #A268BD;
+    color:#ddd;
+
+}
+.btn-footer:hover {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.73), inset 0 0 10px 2px #A268BD;
+    color: #ddd;
+}
