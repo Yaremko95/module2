@@ -9,34 +9,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar bg-dark">
-       <div class="container">
-            <a class="navbar-brand" href="#"><img src="./gog assets/logo.png" style="max-height: 3rem; border-radius: 4px;" class="image-fluid" calt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Store
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Cyberpunk 2077</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                <li class="nav-item">
+   <header>
+        <nav class="navbar navbar-expand-lg  bg-dark">
+           <div class="container">
+                <a class="navbar-brand" href="#"><img src="./gog assets/logo.png" style="max-height: 3rem; border-radius: 4px;" class="image-fluid" calt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+               
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          More
+                          Store
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="#">Cyberpunk 2077</a>
@@ -45,27 +35,40 @@
                           <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </li>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Sign In
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-               
-              </ul>
-              <span><i class="material-icons mr-4" >search</i></span>
-              <span><i class="material-icons" >shopping_cart</i></span>
-            </div>
-       </div>
-      </nav>
+                    <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Cyberpunk 2077</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign In
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                   
+                  </ul>
+                  <span><i class="material-icons mr-4" >search</i></span>
+                  <span><i class="material-icons" >shopping_cart</i></span>
+                </div>
+           </div>
+          </nav>
+   </header>
       <div class="container ">
-          <p>Highlights</p>
+          <p class="title-section py-3 border-bottom border-secondary">Highlights</p>
       </div>
 
       <div class="container mb-2">
@@ -118,7 +121,7 @@
                          <div> </div>
                          <div class="d-flex align-items-center" >
                            <span class="badge">-25%</span>
-                           <p class=" price d-flex flex-column mx-2"><small>19.99</small><span>8.99</span></p>
+                           <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
                            <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
 
                          </div>
@@ -136,7 +139,7 @@
                          <div> </div>
                          <div class="d-flex align-items-center" >
                            <span class="badge">-25%</span>
-                           <p class=" price d-flex flex-column mx-2"><small>19.99</small><span>8.99</span></p>
+                           <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
                            <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
 
                          </div>
@@ -154,7 +157,7 @@
                          <div> </div>
                          <div class="d-flex align-items-center" >
                            <span class="badge">-25%</span>
-                           <p class=" price d-flex flex-column mx-2"><small>19.99</small><span>8.99</span></p>
+                           <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
                            <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
 
                          </div>
@@ -172,7 +175,7 @@
                          <div> </div>
                          <div class="d-flex align-items-center" >
                            <span class="badge">-25%</span>
-                           <p class=" price d-flex flex-column mx-2"><small>19.99</small><span>8.99</span></p>
+                           <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
                            <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
 
                          </div>
@@ -182,7 +185,7 @@
               </div>
           </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid title-section pt-3  border-bottom border-top border-secondary">
           <div class="container">
               <div class="row">
                   <div class="col-9">
@@ -201,37 +204,60 @@
       <div class="container ">
         <p>What's good</p>
         
-        <div class="row">
+        <div class="row row-cols-1 row-cols-lg-2">
             <div class="col ">
                 <div class="card h-100">
-                    <img src="./gog assets/tile (22).jpg" class="card-img-top "  alt="...">
-                    <div class="card-body">
-                      
+                    <img src="./gog assets/tile (22).jpg" class="card-img-top "  style="height:20rem; object-fit:cover"  alt="...">
+                    <div class="card-body d-flex flex-column " >
+                        <p class="card-text">Close Combat:Watch am Rhein</p>
+                        <div class=" d-flex justify-content-between ">
+                           <div> </div>
+                           <div class="d-flex align-items-center flex-shrink-1" >
+                             <span class="badge">-25%</span>
+                             <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
+                             <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
+  
+                           </div>
+                        </div>
                      
                     </div>
                   </div>
             </div>
-            <div class="col  " style="display: grid;">
+            <div class="col" style="display: grid;">
                
                    <div class="row" >
                         <div class="col-6">
                             <div class="card " >
                                 <img src="./gog assets/tile (22).jpg" class="card-img-top"  alt="...">
                                 <div class="card-body">
-                                  
-                                  <p class="card-text">This is a wider card .</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
+                                    <p class="card-text">Close Combat:Watch am Rhein</p>
+                                    <div class=" d-flex justify-content-between ">
+                                       <div> </div>
+                                       <div class="d-flex align-items-center flex-shrink-1" >
+                                         <span class="badge">-25%</span>
+                                         <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
+                                         <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
+              
+                                       </div>
+                                    </div>
+                                 </div>
                               </div>
                         </div>
                         <div class="col-6">
                             <div class="card">
                                 <img src="./gog assets/tile (22).jpg" class="card-img-top"  alt="...">
                                 <div class="card-body">
-                                  
-                                  <p class="card-text">This is a wider card .</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
+                                    <p class="card-text">Close Combat:Watch am Rhein</p>
+                                    <div class=" d-flex justify-content-between ">
+                                        <div> </div>
+                                        <div class="d-flex align-items-center flex-shrink-1" >
+                                        <span class="badge">-25%</span>
+                                        <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
+                                        <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
+  
+                           </div>
+                        </div>
+                                  </div>
                               </div>
                         </div>
                    </div>
@@ -240,9 +266,16 @@
                             <div class="card">
                                 <img src="./gog assets/tile (22).jpg" class="card-img-top"  alt="...">
                                 <div class="card-body">
-                                  
-                                  <p class="card-text">This is a wider card .</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <p class="card-text">Close Combat:Watch am Rhein</p>
+                                    <div class=" d-flex justify-content-between ">
+                                    <div> </div>
+                                    <div class="d-flex align-items-center flex-shrink-1" >
+                                        <span class="badge">-25%</span>
+                                        <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
+                                        <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
+            
+                                    </div>
+                        </div>
                                 </div>
                               </div>
                         </div>
@@ -250,10 +283,17 @@
                             <div class="card">
                                 <img src="./gog assets/tile (22).jpg" class="card-img-top"  alt="...">
                                 <div class="card-body">
-                                  
-                                  <p class="card-text">This is a wider card .</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
+                                    <p class="card-text">Close Combat:Watch am Rhein</p>
+                                    <div class=" d-flex justify-content-between ">
+                                    <div> </div>
+                                    <div class="d-flex align-items-center flex-shrink-1" >
+                                        <span class="badge">-25%</span>
+                                        <p class=" price d-flex flex-column mx-2"><small>19.99</small><span class="bolder">8.99</span></p>
+                                        <span class="cart d-none"><i class="material-icons" >shopping_cart</i></span>
+            
+                                    </div>
+                                    </div>
+                                  </div>
                               </div>
                         </div>
                    </div>
@@ -660,81 +700,81 @@
               </nav>
 
               <div class="row">
-                  <div class="col-7 " style="display: grid;">
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                  <div class="col-7 " style="display: grid; overflow: hidden;">
+                    <div class="row price-row  ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                        <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center"><span class="badge mr-2">-25%</span>59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center">59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center">59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center">59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center"><span class="badge mr-2">-25%</span>59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center"><span class="badge mr-2">-25%</span>59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center">59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center">59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center">59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0 " style="object-fit: cover;"  alt="...">
+                    <div class="row price-row ">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp"  style="height:5rem; object-fit: cover;"  alt="...">
                         </div>
-                        <div class="col-6">Cyberpunk2077</div>
-                        <div class="col-3">59.99</div>
+                         <div class="col-6 d-flex align-items-center">Cyberpunk2077</div>
+                        <div class="col-3 d-flex align-items-center justify-content-center"><span class="badge mr-2">-25%</span>59.99<span class="row-cart d-none px-2"><i class=" material-icons" >shopping_cart</i></span></div>
                     </div>
                   </div>
-                  <div class="col-5">
+                  <div class="col-5" >
                     <div class="row">
-                         <div class="col px-0">
+                         <div class="col ">
                             
                                 <img src="https://images-2.gog-statics.com/0ed40368e681aa68c76c34ade88e9776ae485fac84b2c5977b49a5e8946f2543_curated_collection_huge_tile.webp" class="img-thumbnail w-100 border-0" style="object-fit: cover;" alt="...">
                                 
@@ -742,7 +782,7 @@
                     </div>
                      
                      <div class="row">
-                        <div class="col-6 px-0">
+                        <div class="col-6 pr-0">
                             
                                 
                                     <img src="https://images-3.gog-statics.com/96df296cc32d0f42932a35e8c5f46d8df209ca98e060addd8af2fbed036f6784_curated_collection_small_tile.webp" class="img-thumbnail w-100 border-0" style="object-fit: cover;"  alt="...">
@@ -752,19 +792,19 @@
                                     <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 border-0" style="object-fit: cover;"  alt="...">
                                   
                         </div>
-                        <div class="col-6 px-0">
+                        <div class="col-6 pl-0">
                            
                                 <img src="https://images-2.gog-statics.com/77a2edcd428fdf3de24519cc024ebfd5835460d6e51db0aeee79ba634b87ea03_curated_collection_vertical_tile.webp" class="img-thumbnail w-100 h-100 border-0" style="object-fit: cover;" alt="...">
                              
                         </div>
                      </div>
                      <div class="row">
-                        <div class="col-6 px-0">
+                        <div class="col-6 pr-0 ">
                             
                                 <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0" style="object-fit: cover;"  alt="...">
                               
                         </div>
-                        <div class="col-6 px-0">
+                        <div class="col-6 pl-0">
                             
                                 <img src="https://images-4.gog-statics.com/2314ba515527342e71045ee79f0c54ee57fea1971978930563026bd25d1a9114_curated_collection_small_tile.webp" class="img-thumbnail w-100 h-100 border-0" style="object-fit: cover;"  alt="...">
                              
@@ -936,15 +976,31 @@
     });
 
     const cardBody = document.querySelectorAll('.card-body')
+    const rows =document.querySelectorAll('.price-row')
     const cartIcon =document.querySelectorAll('.cart')
+    const rowCart =document.querySelectorAll('.row-cart')
     cardBody.forEach((card, i) => {
         card.addEventListener('mouseover', function() {
             cartIcon[i].classList.remove("d-none")
         })
     });
+    rows.forEach((row, i) => {
+        row.addEventListener('mouseover', function() {
+            rowCart[i].classList.remove("d-none")
+            row.classList.add("hover-color")
+            row.classList.add("shadow")
+        })
+    });
     cardBody.forEach((card, i) => {
         card.addEventListener('mouseout', function() {
             cartIcon[i].classList.add("d-none")
+        })
+    });
+    rows.forEach((row, i) => {
+        row.addEventListener('mouseout', function() {
+            rowCart[i].classList.add("d-none")
+            row.classList.remove("hover-color")
+            row.classList.remove("shadow")
         })
     });
   

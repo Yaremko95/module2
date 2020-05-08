@@ -1,6 +1,14 @@
 
 body{
     background-color: #d8d8d8;
+    font-family: "Lato", sans-serif;
+}
+.bolder {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+header .nav-link, header i {
+    color: white !important;
 }
 .card-body {
     padding: 1rem !important;
@@ -11,15 +19,25 @@ body{
 .card-body p {
     margin-bottom: 0.1rem;
 }
-.card-body .material-icons {
+ .material-icons {
     color: green;
     font-size: 2rem;
 
 }
-.card-body .badge {
+.hover-color {
+    background-color: #ECECEC ;
+}
+.row-cart i {
+    font-size: 1.8rem;
+}
+p > a {
+    color: #78387b !important;
+    font-weight: bold;
+}
+.badge {
     color: white;
     background-color: #78387b;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 .row {
